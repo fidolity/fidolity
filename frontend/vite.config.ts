@@ -8,9 +8,12 @@ function spaFallbackPlugin() {
     name: 'spa-fallback',
     configureServer(server: any) {
       server.middlewares.use((req: Connect.IncomingMessage, res: any, next: () => void) => {
-        // Skip API requests and static assets
-        if (req.url?.startsWith('/api') || 
-            req.url?.match(/\.(js|css|png|jpg|jpeg|svg|ico|json|woff|woff2|ttf|eot)$/)) {
+        // Skip Vite internal requests, API requests, and static assets
+        if (req.url?.startsWith('/@') ||
+            req.url?.startsWith('/api') || 
+            req.url?.startsWith('/node_modules') ||
+            req.url?.startsWith('/src') ||
+            req.url?.match(/\.(js|jsx|ts|tsx|css|png|jpg|jpeg|svg|ico|json|woff|woff2|ttf|eot)$/)) {
           return next();
         }
         
