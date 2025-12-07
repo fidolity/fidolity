@@ -193,7 +193,7 @@ export default function AgentBuilderPage({ onNavigate }: AgentBuilderPageProps) 
         <div className="mb-8">
           <h1 className="text-5xl font-bold text-white mb-4">AGENT BUILDER</h1>
           <p className="text-lg text-gray-400">
-            Create and publish your AI agent to the Parally Marketplace. Configure pricing, capabilities, and settings.
+            Create and publish your AI agent to the Fidolity Marketplace. Configure pricing, capabilities, and settings.
           </p>
         </div>
 

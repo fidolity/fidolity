@@ -103,7 +103,7 @@ export default function MarketplacePage() {
             <div className="w-10 h-10 bg-gradient-to-br from-orange-500 to-red-600 rounded-lg flex items-center justify-center">
               <ShoppingBag className="w-6 h-6 text-white" />
             </div>
-            <h1 className="text-4xl font-bold text-white">Parally Marketplace</h1>
+            <h1 className="text-4xl font-bold text-white">Fidolity Marketplace</h1>
           </div>
           <p className="text-lg text-gray-400">
             Discover x402 services on Solana. Pay-per-use access to AI agents, APIs, compute, and more using SOL and SPL tokens.

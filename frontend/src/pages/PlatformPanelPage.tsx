@@ -43,17 +43,17 @@ export default function PlatformPanelPage() {
   };
 
   const topServices = [
-    { name: 'Parally Aggregator', transactions: 4336, color: '#FF4D00' },
+    { name: 'Fidolity Aggregator', transactions: 4336, color: '#FF4D00' },
     { name: 'Load Test Service', transactions: 2657, color: '#FF4D00' },
-    { name: 'Parally Agent Chat', transactions: 2408, color: '#FF4D00' },
-    { name: 'Parally Agent Service Fee', transactions: 28, color: '#FF4D00' },
+    { name: 'Fidolity Agent Chat', transactions: 2408, color: '#FF4D00' },
+    { name: 'Fidolity Agent Service Fee', transactions: 28, color: '#FF4D00' },
     { name: 'Platform Fee', transactions: 2, color: '#FF4D00' }
   ];
 
   const servicesData: ServiceData[] = [
     {
       id: '1',
-      name: 'Parally Aggregator',
+      name: 'Fidolity Aggregator',
       category: 'AI Agent',
       price: 0.01,
       transactions: 4336,
@@ -75,7 +75,7 @@ export default function PlatformPanelPage() {
     },
     {
       id: '3',
-      name: 'Parally Agent Chat',
+      name: 'Fidolity Agent Chat',
       category: 'AI Agent',
       price: 0.25,
       transactions: 2408,
@@ -86,7 +86,7 @@ export default function PlatformPanelPage() {
     },
     {
       id: '4',
-      name: 'Parally Agent Service Fee',
+      name: 'Fidolity Agent Service Fee',
       category: 'AI Agent',
       price: 0.05,
       transactions: 28,
@@ -135,7 +135,7 @@ export default function PlatformPanelPage() {
               <div>
                 <h1 className="text-4xl sm:text-5xl font-everett mb-4">Platform Panel</h1>
                 <p className="text-gray-400 font-everett-mono text-sm">
-                  Analytics and insights for Parally platform
+                  Analytics and insights for Fidolity platform
                 </p>
               </div>
               <div className="flex gap-3">

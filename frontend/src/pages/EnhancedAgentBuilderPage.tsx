@@ -241,8 +241,8 @@ export default function EnhancedAgentBuilderPage() {
         <div className="mb-8">
           <div className="flex items-center justify-between">
             <div>
-              <h1 className="text-5xl font-bold text-white mb-4">PARALLY Agent Builder</h1>
-              <p className="text-lg text-gray-400">Create and publish your AI agent to the Parally Marketplace</p>
+              <h1 className="text-5xl font-bold text-white mb-4">FDLT Agent Builder</h1>
+              <p className="text-lg text-gray-400">Create and publish your AI agent to the Fidolity Marketplace</p>
             </div>
             {lastSaveTime && <div className="text-sm text-gray-400 flex items-center gap-2"><CheckCircle className="w-4 h-4 text-green-500" />Last saved: {lastSaveTime.toLocaleTimeString()}</div>}
           </div>

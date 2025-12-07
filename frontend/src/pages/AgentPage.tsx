@@ -35,10 +35,10 @@ export default function AgentPage() {
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
   const suggestedQuestions = [
-    'How does Parally enable machine-to-machine payments?',
+    'How does Fidolity enable machine-to-machine payments?',
     'What is the machine economy?',
-    'How do I integrate Parally SDK?',
-    'Tell me about Parally Marketplace',
+    'How do I integrate Fidolity SDK?',
+    'Tell me about Fidolity Marketplace',
   ];
 
   useEffect(() => {
@@ -78,7 +78,7 @@ export default function AgentPage() {
             id: '1',
             type: 'agent',
             content:
-              "Hello! I'm Parally Agent, your assistant for the machine economy. I can help you understand how Parally enables autonomous machine-to-machine transactions, answer questions about our infrastructure, and guide you through building on Solana. What would you like to know?",
+              "Hello! I'm Fidolity Agent, your assistant for the machine economy. I can help you understand how Fidolity enables autonomous machine-to-machine transactions, answer questions about our infrastructure, and guide you through building on Solana. What would you like to know?",
             timestamp: new Date(),
           },
         ]);
@@ -90,7 +90,7 @@ export default function AgentPage() {
           id: '1',
           type: 'agent',
           content:
-            "Hello! I'm Parally Agent, your assistant for the machine economy. I can help you understand how Parally enables autonomous machine-to-machine transactions, answer questions about our infrastructure, and guide you through building on Solana. What would you like to know?",
+            "Hello! I'm Fidolity Agent, your assistant for the machine economy. I can help you understand how Fidolity enables autonomous machine-to-machine transactions, answer questions about our infrastructure, and guide you through building on Solana. What would you like to know?",
           timestamp: new Date(),
         },
       ]);
@@ -475,7 +475,7 @@ export default function AgentPage() {
                 value={inputValue}
                 onChange={(e) => setInputValue(e.target.value)}
                 onKeyPress={(e) => e.key === 'Enter' && !isLoading && handleSendMessage()}
-                placeholder="Message Parally Agent..."
+                placeholder="Message Fidolity Agent..."
                 disabled={!walletState.connected || isLoading}
                 className="flex-1 bg-gray-900/50 border border-gray-800 rounded-lg px-4 py-3 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-gray-700 disabled:opacity-50 disabled:cursor-not-allowed font-everett-mono"
               />

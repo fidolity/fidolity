@@ -20,7 +20,7 @@ export default function TokenAddressDisplay() {
 
   const loadTokenInfo = async () => {
     try {
-      const data = await DatabaseService.getTokenInfo('PARALLY');
+      const data = await DatabaseService.getTokenInfo('FDLT');
       if (data && !Array.isArray(data)) {
         setTokenInfo(data);
       }

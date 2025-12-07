@@ -32,9 +32,9 @@ export default function DocsPage() {
   const tabs = [
     { id: 'overview', label: 'OVERVIEW' },
     { id: 'getting-started', label: 'GETTING STARTED' },
-    { id: 'parally-agent', label: 'PARALLY AGENT' },
+    { id: 'fidolity-agent', label: 'FDLT AGENT' },
     { id: 'marketplace', label: 'MARKETPLACE' },
-    { id: 'token', label: '$PARALLY TOKEN' },
+    { id: 'token', label: '$FDLT TOKEN' },
     { id: 'agent-builder', label: 'AGENT BUILDER' },
     { id: 'sdk', label: 'SDK' },
     { id: 'fac', label: 'FAC' },
@@ -82,7 +82,7 @@ export default function DocsPage() {
           <>
             <section className="mb-20">
               <div className="text-center mb-16">
-                <h2 className="text-3xl md:text-4xl font-everett mb-4 text-white">What Parally does</h2>
+                <h2 className="text-3xl md:text-4xl font-everett mb-4 text-white">What Fidolity does</h2>
                 <p className="text-lg text-gray-400 font-everett-mono">The complete infrastructure for the machine economy</p>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -96,7 +96,7 @@ export default function DocsPage() {
 
                 <div className="group bg-gradient-to-br from-gray-900 to-black p-8 border border-gray-800 hover:border-orange-600 transition-all duration-300">
                   <Blocks className="w-10 h-10 mb-4" style={{ color: '#FF4D00' }} />
-                  <h3 className="text-xl font-everett-mono mb-3 text-white">Parally Builder</h3>
+                  <h3 className="text-xl font-everett-mono mb-3 text-white">Fidolity Builder</h3>
                   <p className="text-gray-300 font-basel leading-relaxed text-sm">
                     Drag‑and‑drop builder to turn HTTP endpoints into x402 products. Price per request, set fees, and publish to the marketplace—no code required.
                   </p>
@@ -104,7 +104,7 @@ export default function DocsPage() {
 
                 <div className="group bg-gradient-to-br from-gray-900 to-black p-8 border border-gray-800 hover:border-orange-600 transition-all duration-300">
                   <Bot className="w-10 h-10 mb-4" style={{ color: '#FF4D00' }} />
-                  <h3 className="text-xl font-everett-mono mb-3 text-white">Parally Agent</h3>
+                  <h3 className="text-xl font-everett-mono mb-3 text-white">Fidolity Agent</h3>
                   <p className="text-gray-300 font-basel leading-relaxed text-sm">
                     An AI agent that plans, prices, and pays. Chats with Claude 3 Opus, understands x402, and executes purchases to unlock capabilities—pay‑per‑message, pay‑per‑request.
                   </p>
@@ -153,7 +153,7 @@ export default function DocsPage() {
                 </div>
                 <div className="grid md:grid-cols-2 gap-8 max-w-5xl">
                   <p className="text-lg font-basel leading-relaxed text-gray-300">
-                    Parally enables autonomous machine-to-machine transactions. AI agents buy compute. Robots purchase data. Machines transact without human intervention. Built on Solana. Powered by x402. Secured by blockchain. The infrastructure for the autonomous economy.
+                    Fidolity enables autonomous machine-to-machine transactions. AI agents buy compute. Robots purchase data. Machines transact without human intervention. Built on Solana. Powered by x402. Secured by blockchain. The infrastructure for the autonomous economy.
                   </p>
                   <p className="text-lg font-basel leading-relaxed text-gray-300">
                     This is the economic infrastructure for autonomous machines. No accounts. No API keys. No humans. Just machines transacting with machines. Every payment is on-chain. Every transaction is verifiable. Machines become economic agents. The future is here.
@@ -190,7 +190,7 @@ export default function DocsPage() {
                     </li>
                     <li className="flex items-start">
                       <span className="mr-3" style={{ color: '#FF4D00' }}>▪</span>
-                      <span className="font-basel">$PARALLY token launch on Solana</span>
+                      <span className="font-basel">$FDLT token launch on Solana</span>
                     </li>
                     <li className="flex items-start">
                       <span className="mr-3" style={{ color: '#FF4D00' }}>▪</span>
@@ -208,11 +208,11 @@ export default function DocsPage() {
                   <ul className="space-y-3">
                     <li className="flex items-start">
                       <span className="mr-3" style={{ color: '#FF4D00' }}>▪</span>
-                      <span className="font-basel">Parally SDK public release</span>
+                      <span className="font-basel">Fidolity SDK public release</span>
                     </li>
                     <li className="flex items-start">
                       <span className="mr-3" style={{ color: '#FF4D00' }}>▪</span>
-                      <span className="font-basel">Parally Builder (no‑code) beta</span>
+                      <span className="font-basel">Fidolity Builder (no‑code) beta</span>
                     </li>
                     <li className="flex items-start">
                       <span className="mr-3" style={{ color: '#FF4D00' }}>▪</span>
@@ -254,7 +254,7 @@ export default function DocsPage() {
                     </li>
                     <li className="flex items-start">
                       <span className="mr-3" style={{ color: '#FF4D00' }}>▪</span>
-                      <span className="font-basel">Parally Builder marketplace publishing</span>
+                      <span className="font-basel">Fidolity Builder marketplace publishing</span>
                     </li>
                     <li className="flex items-start">
                       <span className="mr-3" style={{ color: '#FF4D00' }}>▪</span>
@@ -309,7 +309,7 @@ export default function DocsPage() {
 
             <section className="mb-20">
               <div className="text-center mb-16">
-                <h2 className="text-3xl md:text-4xl font-everett mb-4 text-white">$PARALLY Token</h2>
+                <h2 className="text-3xl md:text-4xl font-everett mb-4 text-white">$FDLT Token</h2>
                 <p className="text-lg font-everett-mono text-gray-400">
                   Native token on Solana. Powering the machine economy with a deflationary flywheel.
                 </p>
@@ -320,7 +320,7 @@ export default function DocsPage() {
                   <Wallet className="w-10 h-10 mb-4" style={{ color: '#FF4D00' }} />
                   <h3 className="text-xl font-basel mb-4 text-white">Network Utility</h3>
                   <p className="text-gray-300 font-basel leading-relaxed text-sm">
-                    $PARALLY powers the machine economy. Staking, governance, fee discounts, and access to premium services.
+                    $FDLT powers the machine economy. Staking, governance, fee discounts, and access to premium services.
                   </p>
                 </div>
 
@@ -344,7 +344,7 @@ export default function DocsPage() {
                   <Crown className="w-10 h-10 mb-4" style={{ color: '#FF4D00' }} />
                   <h3 className="text-xl font-basel mb-4 text-white">Platform Access</h3>
                   <p className="text-gray-300 font-basel leading-relaxed text-sm">
-                    Unlock premium features, priority support, and exclusive services. Build on top of Parally infrastructure.
+                    Unlock premium features, priority support, and exclusive services. Build on top of Fidolity infrastructure.
                   </p>
                 </div>
               </div>
@@ -369,14 +369,14 @@ export default function DocsPage() {
                   </div>
                   <div>
                     <p className="font-everett-mono text-sm mb-2">SUPPLY</p>
-                    <p className="text-2xl font-everett">1B $PARALLY</p>
+                    <p className="text-2xl font-everett">1B $FDLT</p>
                   </div>
                 </div>
               </div>
 
               <div className="mt-8 bg-black/80 backdrop-blur-sm p-8 border border-gray-800">
                 <p className="text-gray-300 font-basel leading-relaxed">
-                  $PARALLY is the native token of the Parally ecosystem, launched on Solana. It powers governance, enables staking, provides fee discounts, and unlocks premium features. 75% of platform fees are used for buybacks and burns, creating a deflationary flywheel that benefits all holders as the machine economy grows.
+                  $FDLT is the native token of the Fidolity ecosystem, launched on Solana. It powers governance, enables staking, provides fee discounts, and unlocks premium features. 75% of platform fees are used for buybacks and burns, creating a deflationary flywheel that benefits all holders as the machine economy grows.
                 </p>
               </div>
             </section>
@@ -413,17 +413,17 @@ export default function DocsPage() {
           </div>
         )}
 
-        {activeTab === 'parally-agent' && (
+        {activeTab === 'fidolity-agent' && (
           <div>
-            <h2 className="text-4xl md:text-5xl font-everett mb-8">Parally Agent</h2>
+            <h2 className="text-4xl md:text-5xl font-everett mb-8">Fidolity Agent</h2>
             <p className="text-xl font-everett-mono mb-12">
               The first AI agent that actually pays. Built to prove AI agents can be economically autonomous.
             </p>
 
             <section className="mb-16">
-              <h3 className="text-3xl font-everett mb-6 text-white">What is Parally Agent?</h3>
+              <h3 className="text-3xl font-everett mb-6 text-white">What is Fidolity Agent?</h3>
               <p className="text-lg font-basel leading-relaxed mb-6">
-                Parally Agent is an AI assistant powered by Claude 3.5 Sonnet that understands x402 payment protocols. When it encounters a paid service, it automatically quotes prices, guides you through wallet approval, and retries the request with proof.
+                Fidolity Agent is an AI assistant powered by Claude 3.5 Sonnet that understands x402 payment protocols. When it encounters a paid service, it automatically quotes prices, guides you through wallet approval, and retries the request with proof.
               </p>
               <p className="text-lg font-basel leading-relaxed">
                 <strong className="font-everett">This is the proof of concept for the autonomous economy.</strong> Every conversation that requires a paid service demonstrates how agents will spend money to accomplish tasks. No human API keys. No credit cards. Just wallets and payments.
@@ -468,7 +468,7 @@ export default function DocsPage() {
 
         {activeTab === 'marketplace' && (
           <div>
-            <h2 className="text-4xl md:text-5xl font-everett mb-8">Parally Marketplace</h2>
+            <h2 className="text-4xl md:text-5xl font-everett mb-8">Fidolity Marketplace</h2>
             <p className="text-xl font-everett-mono mb-12">
               The app store for AI agents. Discover, quote, and purchase x402 services on demand.
             </p>
@@ -476,7 +476,7 @@ export default function DocsPage() {
             <section className="mb-16">
               <h3 className="text-3xl font-everett mb-6 text-white">Overview</h3>
               <p className="text-lg font-basel leading-relaxed mb-6">
-                Parally Marketplace is where agents find services to buy. Every listing is an x402-protected API. Every purchase is settled in USDC on Solana. Every transaction is verifiable on-chain.
+                Fidolity Marketplace is where agents find services to buy. Every listing is an x402-protected API. Every purchase is settled in USDC on Solana. Every transaction is verifiable on-chain.
               </p>
               <p className="text-lg font-basel leading-relaxed">
                 <strong className="font-everett">This is the agent economy's discovery layer.</strong> Deploy your service, set your price, watch agents buy. No integration required—just standard x402.
@@ -513,9 +513,9 @@ export default function DocsPage() {
 
         {activeTab === 'token' && (
           <div>
-            <h2 className="text-4xl md:text-5xl font-everett mb-8">What is $PARALLY?</h2>
+            <h2 className="text-4xl md:text-5xl font-everett mb-8">What is $FDLT?</h2>
             <p className="text-xl font-basel leading-relaxed mb-12">
-              $PARALLY is the native token of the Parally ecosystem, launched on Solana. It powers the machine economy through governance, staking, fee discounts, and utility. Transactions on Solana settle in USDC, but every transaction feeds the flywheel that drives deflationary pressure on $PARALLY through buybacks and burns powered by platform fees.
+              $FDLT is the native token of the Fidolity ecosystem, launched on Solana. It powers the machine economy through governance, staking, fee discounts, and utility. Transactions on Solana settle in USDC, but every transaction feeds the flywheel that drives deflationary pressure on $FDLT through buybacks and burns powered by platform fees.
             </p>
 
             <section className="mb-16">
@@ -637,7 +637,7 @@ export default function DocsPage() {
       <footer className="bg-black border-t border-gray-800 py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-8">
-            <p className="text-xs font-everett-mono mb-4 text-white">STAY UP TO DATE WITH PARALLY</p>
+            <p className="text-xs font-everett-mono mb-4 text-white">STAY UP TO DATE WITH FDLT</p>
             <div className="flex flex-col sm:flex-row gap-2 max-w-2xl">
               <input
                 type="email"
@@ -663,14 +663,14 @@ export default function DocsPage() {
             </div>
 
             <div className="lg:col-span-2">
-              <h4 className="text-xs font-everett-mono mb-4 text-white">PARALLY UTILITIES</h4>
+              <h4 className="text-xs font-everett-mono mb-4 text-white">FDLT UTILITIES</h4>
               <ul className="grid grid-cols-2 gap-2">
-                <li className="text-sm font-everett-mono text-gray-400 hover:text-orange-600 cursor-pointer">PARALLY AGENT</li>
-                <li className="text-sm font-everett-mono text-gray-400 hover:text-orange-600 cursor-pointer">PARALLY MARKETPLACE</li>
+                <li className="text-sm font-everett-mono text-gray-400 hover:text-orange-600 cursor-pointer">FDLT AGENT</li>
+                <li className="text-sm font-everett-mono text-gray-400 hover:text-orange-600 cursor-pointer">FDLT MARKETPLACE</li>
                 <li className="text-sm font-everett-mono text-gray-400 hover:text-orange-600 cursor-pointer">AGENT BUILDER</li>
-                <li className="text-sm font-everett-mono text-gray-400 hover:text-orange-600 cursor-pointer">PARALLY SDK</li>
-                <li className="text-sm font-everett-mono text-gray-400 hover:text-orange-600 cursor-pointer">PARALLY FACILITATOR</li>
-                <li className="text-sm font-everett-mono text-gray-400 hover:text-orange-600 cursor-pointer">PARALLY X402 CREATOR</li>
+                <li className="text-sm font-everett-mono text-gray-400 hover:text-orange-600 cursor-pointer">FDLT SDK</li>
+                <li className="text-sm font-everett-mono text-gray-400 hover:text-orange-600 cursor-pointer">FDLT FACILITATOR</li>
+                <li className="text-sm font-everett-mono text-gray-400 hover:text-orange-600 cursor-pointer">FDLT X402 CREATOR</li>
                 <li className="text-sm font-everett-mono text-gray-400 hover:text-orange-600 cursor-pointer border-t border-gray-700 pt-2 mt-2">USER PANEL</li>
                 <li className="text-sm font-everett-mono text-gray-400 hover:text-orange-600 cursor-pointer border-t border-gray-700 pt-2 mt-2">PLATFORM PANEL</li>
               </ul>
@@ -683,7 +683,7 @@ export default function DocsPage() {
               <li className="text-xs font-everett-mono text-gray-400 hover:text-orange-600 cursor-pointer">TERMS OF SERVICE</li>
               <li className="text-xs font-everett-mono text-gray-400 hover:text-orange-600 cursor-pointer">LEGAL</li>
             </ul>
-            <p className="text-xs font-everett-mono text-gray-400">©2025 PARALLY. ALL RIGHTS RESERVED.</p>
+            <p className="text-xs font-everett-mono text-gray-400">©2025 FDLT. ALL RIGHTS RESERVED.</p>
           </div>
         </div>
       </footer>

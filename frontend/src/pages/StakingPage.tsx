@@ -158,10 +158,10 @@ export default function StakingPage() {
             <div className="w-10 h-10 bg-gradient-to-br from-orange-500 to-red-600 rounded-lg flex items-center justify-center">
               <TrendingUp className="w-6 h-6 text-white" />
             </div>
-            <h1 className="text-4xl font-bold text-white">Parally Staking</h1>
+            <h1 className="text-4xl font-bold text-white">Fidolity Staking</h1>
           </div>
           <p className="text-lg text-gray-400">
-            Stake your ${config?.token_symbol || 'PARALLY'} tokens and earn rewards from platform fees
+            Stake your ${config?.token_symbol || 'FDLT'} tokens and earn rewards from platform fees
           </p>
         </div>
 
@@ -231,7 +231,7 @@ export default function StakingPage() {
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
               <div className="bg-black/30 backdrop-blur-sm rounded-2xl border border-gray-800 p-6">
-                <div className="text-sm font-medium text-gray-500 mb-2">YOUR PARALLY BALANCE</div>
+                <div className="text-sm font-medium text-gray-500 mb-2">YOUR FDLT BALANCE</div>
                 <div className="text-3xl font-bold text-white">
                   {balance.toLocaleString(undefined, { maximumFractionDigits: 2 })} <span className="text-gray-500 text-xl">{config.token_symbol}</span>
                 </div>
@@ -246,7 +246,7 @@ export default function StakingPage() {
             </div>
 
             <div className="bg-black/30 backdrop-blur-sm rounded-2xl border border-gray-800 p-8">
-              <h2 className="text-2xl font-bold text-white mb-6">Stake PARALLY Tokens</h2>
+              <h2 className="text-2xl font-bold text-white mb-6">Stake FDLT Tokens</h2>
 
               <div className="mb-6">
                 <label className="block text-sm font-medium text-gray-300 mb-2">
@@ -312,7 +312,7 @@ export default function StakingPage() {
                     onMouseEnter={(e) => !loading && config.stake_enabled && (e.currentTarget.style.opacity = '0.9')}
                     onMouseLeave={(e) => !loading && config.stake_enabled && (e.currentTarget.style.opacity = '1')}
                   >
-                    {loading ? 'PROCESSING...' : config.stake_enabled ? 'STAKE PARALLY' : 'STAKING DISABLED'}
+                    {loading ? 'PROCESSING...' : config.stake_enabled ? 'STAKE FDLT' : 'STAKING DISABLED'}
                   </button>
 
                   {stakedAmount > 0 && config.unstake_enabled && (

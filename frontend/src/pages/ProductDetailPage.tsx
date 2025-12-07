@@ -135,7 +135,7 @@ export default function ProductDetailPage() {
         }
       );
 
-      setResult(`✓ Execution successful!\n\nQuery: "${queryInput}"\n\nResponse: This is a demo response. In production, this would call the actual API endpoint at:\n${item.api_endpoint || 'https://api.parally.com/api/agents/execute'}\n\nTransaction recorded. The agent has been executed successfully.`);
+      setResult(`✓ Execution successful!\n\nQuery: "${queryInput}"\n\nResponse: This is a demo response. In production, this would call the actual API endpoint at:\n${item.api_endpoint || 'https://api.fidolity.com/api/agents/execute'}\n\nTransaction recorded. The agent has been executed successfully.`);
 
       setItem({
         ...item,
@@ -164,7 +164,7 @@ recipient = Pubkey.from_string("${item.api_endpoint || ''}")
 
 # Step 1: Get payment requirements
 response = requests.post(
-    "${item.api_endpoint || 'https://api.parally.com/api/agents/execute'}",
+    "${item.api_endpoint || 'https://api.fidolity.com/api/agents/execute'}",
     json={
         "agent_id": "${item.id}",
         "input_data": {"query": "Your query here"},
@@ -182,7 +182,7 @@ if response.status_code == 402:
     }
 
     response = requests.post(
-        "${item.api_endpoint || 'https://api.parally.com/api/agents/execute'}",
+        "${item.api_endpoint || 'https://api.fidolity.com/api/agents/execute'}",
         json={"agent_id": "${item.id}", "input_data": {"query": "Your query here"}},
         headers={"X-Payment": json.dumps(payment_header)}
     )
@@ -197,7 +197,7 @@ const recipient = new PublicKey("${item.api_endpoint || ''}");
 
 // Execute agent
 async function executeAgent() {
-    const response = await fetch("${item.api_endpoint || 'https://api.parally.com/api/agents/execute'}", {
+    const response = await fetch("${item.api_endpoint || 'https://api.fidolity.com/api/agents/execute'}", {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -213,7 +213,7 @@ async function executeAgent() {
             amount: ${item.price}
         };
 
-        const retryResponse = await fetch("${item.api_endpoint || 'https://api.parally.com/api/agents/execute'}", {
+        const retryResponse = await fetch("${item.api_endpoint || 'https://api.fidolity.com/api/agents/execute'}", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -229,7 +229,7 @@ async function executeAgent() {
         console.log(result);
     }
 }`,
-      javascript: `const response = await fetch("${item.api_endpoint || 'https://api.parally.com/api/agents/execute'}", {
+      javascript: `const response = await fetch("${item.api_endpoint || 'https://api.fidolity.com/api/agents/execute'}", {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
@@ -240,7 +240,7 @@ async function executeAgent() {
 
 const data = await response.json();
 console.log(data);`,
-      curl: `curl -X POST "${item.api_endpoint || 'https://api.parally.com/api/agents/execute'}" \\
+      curl: `curl -X POST "${item.api_endpoint || 'https://api.fidolity.com/api/agents/execute'}" \\
   -H "Content-Type: application/json" \\
   -d '{
     "agent_id": "${item.id}",

@@ -56,14 +56,14 @@ export default function UtilitiesMenu({ isOpen, onClose }: UtilitiesMenuProps) {
   }, [isOpen, onClose]);
 
   const menuItems = [
-    { name: 'PARALLY AGENT', color: '#FF4D00', path: '/agent' },
-    { name: 'PARALLY MARKETPLACE', color: '#FF4D00', path: '/marketplace' },
-    { name: 'PARALLY AGENT BUILDER', color: '#FF4D00', path: '/agent/builder' },
-    { name: 'PARALLY STAKING', color: '#FF4D00', path: '/staking' },
-    { name: 'PARALLY PLUG', color: '#000000', path: null },
-    { name: 'PARALLY SDK', color: '#000000', path: null },
-    { name: 'PARALLY FACILITATOR', color: '#000000', path: null },
-    { name: 'PARALLY X402 CREATOR', color: '#000000', path: null },
+    { name: 'FDLT AGENT', color: '#FF4D00', path: '/agent' },
+    { name: 'FDLT MARKETPLACE', color: '#FF4D00', path: '/marketplace' },
+    { name: 'FDLT AGENT BUILDER', color: '#FF4D00', path: '/agent/builder' },
+    { name: 'FDLT STAKING', color: '#FF4D00', path: '/staking' },
+    { name: 'FDLT PLUG', color: '#000000', path: null },
+    { name: 'FDLT SDK', color: '#000000', path: null },
+    { name: 'FDLT FACILITATOR', color: '#000000', path: null },
+    { name: 'FDLT X402 CREATOR', color: '#000000', path: null },
   ];
 
   const panelItems = [
@@ -110,7 +110,7 @@ export default function UtilitiesMenu({ isOpen, onClose }: UtilitiesMenuProps) {
                 id="utilities-menu-title"
                 className="text-lg font-everett-mono tracking-wide"
               >
-                Parally Utilities
+                Fidolity Utilities
               </h2>
               <button
                 onClick={onClose}

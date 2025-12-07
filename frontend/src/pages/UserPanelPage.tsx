@@ -158,7 +158,7 @@ export default function UserPanelPage() {
                   <Activity size={48} className="mx-auto mb-4 opacity-20" />
                   <p className="font-everett-mono text-sm">No transaction data available</p>
                   <p className="font-everett-mono text-xs mt-2">
-                    Start using Parally services to see your usage patterns
+                    Start using Fidolity services to see your usage patterns
                   </p>
                 </div>
               </div>

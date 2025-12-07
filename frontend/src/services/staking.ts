@@ -73,7 +73,7 @@ export async function stakeTokens(
     // Record stake via API (mock for now - would need backend endpoint)
     console.log('Stake recorded:', {
       walletAddress: wallet.publicKey.toString(),
-      tokenSymbol: 'PARALLY',
+      tokenSymbol: 'FDLT',
       amount,
       signature,
     });
@@ -127,7 +127,7 @@ export async function unstakeTokens(
     // Record unstake via API (mock for now - would need backend endpoint)
     console.log('Unstake recorded:', {
       walletAddress: wallet.publicKey.toString(),
-      tokenSymbol: 'PARALLY',
+      tokenSymbol: 'FDLT',
       amount,
       signature,
     });
