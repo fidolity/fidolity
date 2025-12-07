@@ -1,4 +1,4 @@
-import { supabase } from './database';
+import APIClient from './api';
 
 export interface AgentDraft {
   id?: string;
