@@ -33,7 +33,7 @@ export default function Header({ walletState, onConnectWallet }: HeaderProps) {
               to="/"
               className="flex items-center transform transition-transform duration-300 hover:scale-105"
             >
-              <img src="/logo.svg" alt="Parally" width="50" height="50" />
+              <img src="/fidolity-logo.png" alt="Fidolity" width="50" height="50" />
             </Link>
           </div>
 
