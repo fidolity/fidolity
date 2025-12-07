@@ -36,7 +36,7 @@ export default function HomePage() {
       <section className="min-h-screen flex flex-col justify-center items-start px-4 sm:px-6 lg:px-8 pt-32 pb-32 text-white">
         <div className="max-w-7xl mx-auto w-full">
           <div className="max-w-4xl">
-            <p className="text-sm font-everett-mono mb-4 tracking-wide">Parally enables</p>
+            <p className="text-sm font-everett-mono mb-4 tracking-wide">Fidolity enables</p>
 
             <h1 className="text-xl font-everett-mono mb-8 tracking-wide">
               <RotatingText texts={rotatingTexts} interval={2000} className="font-everett-mono" />
