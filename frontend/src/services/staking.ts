@@ -1,15 +1,10 @@
 import { Connection, PublicKey, Transaction, SystemProgram, LAMPORTS_PER_SOL } from '@solana/web3.js';
-import { createClient } from '@supabase/supabase-js';
+import APIClient from './api';
 
 const HELIUS_RPC_ENDPOINT = 'https://mainnet.helius-rpc.com/?api-key=b949b8c4-ffbd-40f7-b74c-1daf99b6e23a';
 const RPC_ENDPOINT = import.meta.env.VITE_HELIUS_RPC_URL || HELIUS_RPC_ENDPOINT;
 
 const connection = new Connection(RPC_ENDPOINT, 'confirmed');
-
-const supabase = createClient(
-  import.meta.env.VITE_SUPABASE_URL,
-  import.meta.env.VITE_SUPABASE_ANON_KEY
-);
 
 export async function getTokenBalance(walletAddress: string, tokenAddress: string): Promise<number> {
   try {
