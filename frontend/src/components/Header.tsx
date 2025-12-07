@@ -70,7 +70,7 @@ export default function Header({ walletState, onConnectWallet }: HeaderProps) {
             }}
             aria-label="Open utilities menu"
           >
-            Parally Utilities
+            Fidolity Utilities
           </button>
 
           <div className="hidden md:flex items-center gap-4">
