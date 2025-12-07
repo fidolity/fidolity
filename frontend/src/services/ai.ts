@@ -1,4 +1,4 @@
-const EDGE_FUNCTION_URL = `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/ai-chat`;
+import APIClient from './api';
 
 export interface AIMessage {
   role: 'user' | 'assistant';
@@ -14,7 +14,7 @@ export interface AIChatRequest {
 export interface AIChatResponse {
   success: boolean;
   response: string;
-  tokensUsed?: number;
+  tokens_used?: number;
   error?: string;
 }
 
@@ -25,26 +25,11 @@ export class AIService {
     conversationHistory: AIMessage[] = []
   ): Promise<AIChatResponse> {
     try {
-      const response = await fetch(EDGE_FUNCTION_URL, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${import.meta.env.VITE_SUPABASE_ANON_KEY}`,
-        },
-        body: JSON.stringify({
-          message,
-          walletAddress,
-          conversationHistory: conversationHistory.slice(-10),
-        } as AIChatRequest),
+      return await APIClient.post<AIChatResponse>('/ai/chat', {
+        message,
+        wallet_address: walletAddress,
+        conversation_history: conversationHistory.slice(-10),
       });
-
-      if (!response.ok) {
-        const errorData = await response.json();
-        throw new Error(errorData.error || 'Failed to get AI response');
-      }
-
-      const data: AIChatResponse = await response.json();
-      return data;
     } catch (error) {
       console.error('Error calling AI service:', error);
       return {
@@ -64,28 +49,10 @@ export class AIService {
     onError: (error: string) => void
   ): Promise<void> {
     try {
-      const response = await fetch(EDGE_FUNCTION_URL, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${import.meta.env.VITE_SUPABASE_ANON_KEY}`,
-        },
-        body: JSON.stringify({
-          message,
-          walletAddress,
-          conversationHistory: conversationHistory.slice(-10),
-        } as AIChatRequest),
-      });
+      const response = await this.sendMessage(message, walletAddress, conversationHistory);
 
-      if (!response.ok) {
-        const errorData = await response.json();
-        throw new Error(errorData.error || 'Failed to get AI response');
-      }
-
-      const data: AIChatResponse = await response.json();
-
-      if (data.success && data.response) {
-        const words = data.response.split(' ');
+      if (response.success && response.response) {
+        const words = response.response.split(' ');
         let currentText = '';
 
         for (let i = 0; i < words.length; i++) {
@@ -94,9 +61,9 @@ export class AIService {
           await new Promise(resolve => setTimeout(resolve, 30));
         }
 
-        onComplete(data.response);
+        onComplete(response.response);
       } else {
-        throw new Error(data.error || 'No response received');
+        throw new Error(response.error || 'No response received');
       }
     } catch (error) {
       console.error('Error in streaming AI service:', error);
