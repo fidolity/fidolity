@@ -28,8 +28,8 @@ export default function TokenAddressDisplay() {
       console.error('Failed to load token info:', error);
       // Fallback for static deployment
       setTokenInfo({
-        token_symbol: 'PARALLY',
-        token_name: 'PARALLY Token',
+        token_symbol: 'FDLT',
+        token_name: 'Fidolity Token',
         contract_address: 'soon',
         blockchain: 'SOLANA',
       });
