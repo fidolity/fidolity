@@ -36,14 +36,14 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="text-sm font-semibold text-gray-900 mb-4 uppercase">Parally Utilities</h4>
+            <h4 className="text-sm font-semibold text-gray-900 mb-4 uppercase">Fidolity Utilities</h4>
             <ul className="space-y-2 text-sm text-gray-600">
               <li>
                 <Link
                   to="/agent"
                   className="hover:text-gray-900 transition-colors"
                 >
-                  Parally Agent
+                  Fidolity Agent
                 </Link>
               </li>
               <li>
@@ -51,7 +51,7 @@ export default function Footer() {
                   to="/marketplace"
                   className="hover:text-gray-900 transition-colors"
                 >
-                  Parally Marketplace
+                  Fidolity Marketplace
                 </Link>
               </li>
               <li>
@@ -59,12 +59,12 @@ export default function Footer() {
                   to="/agent/builder"
                   className="hover:text-gray-900 transition-colors"
                 >
-                  Parally Agent Builder
+                  Fidolity Agent Builder
                 </Link>
               </li>
-              <li>Parally SDK</li>
-              <li>Parally Facilitator</li>
-              <li>Parally X402 Creator</li>
+              <li>Fidolity SDK</li>
+              <li>Fidolity Facilitator</li>
+              <li>Fidolity X402 Creator</li>
               <li>
                 <Link
                   to="/dashboard/user"
