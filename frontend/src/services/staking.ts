@@ -141,18 +141,9 @@ export async function unstakeTokens(
 
 export async function getTotalValueLocked(tokenSymbol: string): Promise<number> {
   try {
-    const { data, error } = await supabase
-      .from('user_stakes')
-      .select('staked_amount')
-      .eq('token_symbol', tokenSymbol)
-      .is('unstake_date', null);
-
-    if (error) {
-      console.error('Failed to get TVL:', error);
-      return 0;
-    }
-
-    return data?.reduce((sum, stake) => sum + (stake.staked_amount || 0), 0) || 0;
+    const configs: any[] = await APIClient.get('/staking/config');
+    const config = configs.find(c => c.token_symbol === tokenSymbol);
+    return config?.total_value_locked || 0;
   } catch (error) {
     console.error('Failed to get TVL:', error);
     return 0;
