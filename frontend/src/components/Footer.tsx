@@ -89,7 +89,7 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="flex items-center space-x-6">
               <a
-                href="https://x.com/parallydotfun"
+                href="https://x.com/fidolity"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 hover:text-gray-900 transition-colors"
@@ -99,7 +99,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="https://github.com/parallydotfun/Parally"
+                href="https://github.com/fidolity"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 hover:text-gray-900 transition-colors"
