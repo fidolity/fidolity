@@ -18,11 +18,11 @@ db = client.get_database(os.environ.get('DB_NAME', 'parally_db'))
 
 async def seed_token_info():
     """Seed token info"""
-    existing = await db.token_info.find_one({"token_symbol": "PARALLY"})
+    existing = await db.token_info.find_one({"token_symbol": "FDLT"})
     if not existing:
         token = TokenInfo(
-            token_symbol="PARALLY",
-            token_name="PARALLY Token",
+            token_symbol="FDLT",
+            token_name="Fidolity Token",
             contract_address="soon",  # Start with "soon"
             blockchain="SOLANA",
             is_active=True
