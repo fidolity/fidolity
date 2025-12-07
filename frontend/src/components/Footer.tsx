@@ -109,7 +109,7 @@ export default function Footer() {
             </div>
 
             <div className="flex items-center space-x-6 text-sm text-gray-600">
-              <span>© 2024 Parally</span>
+              <span>© 2024 Fidolity</span>
               <a href="#" className="hover:text-gray-900 transition-colors">Privacy Policy</a>
               <a href="#" className="hover:text-gray-900 transition-colors">Terms of Service</a>
             </div>
