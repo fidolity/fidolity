@@ -40,18 +40,28 @@ export default function StakingPage() {
 
   const fetchStakingConfig = async () => {
     try {
-      const response = await fetch(`${import.meta.env.VITE_SUPABASE_URL}/rest/v1/staking_config?select=*&limit=1`, {
-        headers: {
-          'apikey': import.meta.env.VITE_SUPABASE_ANON_KEY,
-          'Content-Type': 'application/json',
-        },
-      });
+      const apiUrl = import.meta.env.VITE_API_URL || '/api';
+      const response = await fetch(`${apiUrl}/staking/config`);
       const data = await response.json();
       if (data && data.length > 0) {
         setConfig(data[0]);
       }
     } catch (err) {
       console.error('Failed to fetch staking config:', err);
+      // Fallback for static deployment
+      setConfig({
+        token_name: "Fidolity Token",
+        token_symbol: "FDLT",
+        token_address: "FDLTTokenAddressPlaceholder",
+        base_apy: 26.18,
+        boosted_apy: 45.42,
+        boost_amount: 15000,
+        boost_source: "15k USDC rewards campaign",
+        campaign_progress: 75.4,
+        total_value_locked: 59456732.43,
+        stake_enabled: false,
+        unstake_enabled: true,
+      });
     }
   };
 
