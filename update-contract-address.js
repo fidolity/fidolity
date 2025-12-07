@@ -12,18 +12,44 @@ async function updateContractAddress(newAddress) {
   console.log(`\n🔄 Updating contract address to: "${newAddress}"\n`);
   
   try {
+    // Use upsert to either update or insert
     const { data, error } = await supabase
       .from('token_info')
-      .update({ 
+      .upsert({ 
+        token_symbol: 'PARALLY',
+        token_name: 'PARALLY Token',
         contract_address: newAddress,
+        blockchain: 'SOLANA',
+        is_active: true,
         updated_at: new Date().toISOString()
+      }, {
+        onConflict: 'token_symbol'
       })
-      .eq('token_symbol', 'PARALLY')
       .select();
 
     if (error) {
       console.error('❌ Error:', error.message);
-      process.exit(1);
+      console.error('Details:', error);
+      
+      // Try simple update as fallback
+      console.log('\n🔄 Trying alternative update method...\n');
+      const { data: updateData, error: updateError } = await supabase
+        .from('token_info')
+        .update({ contract_address: newAddress })
+        .eq('token_symbol', 'PARALLY')
+        .select();
+      
+      if (updateError) {
+        console.error('❌ Alternative method also failed:', updateError.message);
+        console.log('\n⚠️  This might be a permissions issue with the anon key.');
+        console.log('You may need to update this in the Supabase dashboard instead.');
+        process.exit(1);
+      }
+      
+      if (updateData && updateData.length > 0) {
+        console.log('✅ Alternative method succeeded!');
+        data = updateData;
+      }
     }
 
     if (data && data.length > 0) {
@@ -35,7 +61,7 @@ async function updateContractAddress(newAddress) {
       console.log('  Blockchain:', data[0].blockchain);
       console.log('\n✨ Refresh your app to see the changes!\n');
     } else {
-      console.log('⚠️  No records were updated. Token might not exist.');
+      console.log('⚠️  No records were updated.');
     }
   } catch (err) {
     console.error('❌ Unexpected error:', err.message);
