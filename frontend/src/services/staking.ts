@@ -22,20 +22,9 @@ export async function getTokenBalance(walletAddress: string, tokenAddress: strin
 
 export async function getStakedAmount(walletAddress: string, tokenSymbol: string): Promise<number> {
   try {
-    const { data, error } = await supabase
-      .from('user_stakes')
-      .select('staked_amount')
-      .eq('wallet_address', walletAddress)
-      .eq('token_symbol', tokenSymbol)
-      .is('unstake_date', null)
-      .maybeSingle();
-
-    if (error) {
-      console.error('Failed to get staked amount:', error);
-      return 0;
-    }
-
-    return data?.staked_amount || 0;
+    const stakes: any[] = await APIClient.get(`/staking/stakes/${walletAddress}`);
+    const activeStake = stakes.find(s => s.token_symbol === tokenSymbol && !s.unstake_date);
+    return activeStake?.staked_amount || 0;
   } catch (error) {
     console.error('Failed to get staked amount:', error);
     return 0;
