@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Copy, ExternalLink, Check } from 'lucide-react';
-import { supabase } from '../services/database';
+import { DatabaseService } from '../services/database';
 
 interface TokenInfo {
   token_symbol: string;
@@ -20,14 +20,10 @@ export default function TokenAddressDisplay() {
 
   const loadTokenInfo = async () => {
     try {
-      const { data, error } = await supabase
-        .from('token_info')
-        .select('token_symbol, token_name, contract_address, blockchain')
-        .eq('is_active', true)
-        .maybeSingle();
-
-      if (error) throw error;
-      if (data) setTokenInfo(data);
+      const data = await DatabaseService.getTokenInfo('PARALLY');
+      if (data && !Array.isArray(data)) {
+        setTokenInfo(data);
+      }
     } catch (error) {
       console.error('Failed to load token info:', error);
     } finally {
