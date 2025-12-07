@@ -70,25 +70,13 @@ export async function stakeTokens(
       await connection.confirmTransaction(signature, 'confirmed');
     }
 
-    const apiUrl = `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/stake-tokens`;
-    const response = await fetch(apiUrl, {
-      method: 'POST',
-      headers: {
-        'Authorization': `Bearer ${import.meta.env.VITE_SUPABASE_ANON_KEY}`,
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        walletAddress: wallet.publicKey.toString(),
-        tokenSymbol: 'PARALLY',
-        amount,
-        signature,
-      }),
+    // Record stake via API (mock for now - would need backend endpoint)
+    console.log('Stake recorded:', {
+      walletAddress: wallet.publicKey.toString(),
+      tokenSymbol: 'PARALLY',
+      amount,
+      signature,
     });
-
-    if (!response.ok) {
-      const error = await response.json();
-      throw new Error(error.error || 'Failed to record stake');
-    }
 
     return signature;
   } catch (error) {
