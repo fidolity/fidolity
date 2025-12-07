@@ -56,7 +56,7 @@ export default function HomePage() {
                 className="px-6 py-3 text-black font-everett-mono text-sm transition-all hover:opacity-90 cursor-pointer"
                 style={{ backgroundColor: '#FF4D00' }}
               >
-                TRY PARALLY AGENT
+                TRY FIDOLITY AGENT
               </button>
               <button
                 onClick={() => navigate('/docs')}
