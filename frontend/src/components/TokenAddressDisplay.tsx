@@ -26,6 +26,13 @@ export default function TokenAddressDisplay() {
       }
     } catch (error) {
       console.error('Failed to load token info:', error);
+      // Fallback for static deployment
+      setTokenInfo({
+        token_symbol: 'PARALLY',
+        token_name: 'PARALLY Token',
+        contract_address: 'soon',
+        blockchain: 'SOLANA',
+      });
     } finally {
       setLoading(false);
     }
