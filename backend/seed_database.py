@@ -35,12 +35,12 @@ async def seed_token_info():
 
 async def seed_staking_config():
     """Seed staking configuration"""
-    existing = await db.staking_config.find_one({"token_symbol": "R1X"})
+    existing = await db.staking_config.find_one({"token_symbol": "FDLT"})
     if not existing:
         config = StakingConfig(
-            token_name="R1X Token",
-            token_symbol="R1X",
-            token_address="R1XTokenAddressPlaceholder",
+            token_name="Fidolity Token",
+            token_symbol="FDLT",
+            token_address="FDLTTokenAddressPlaceholder",
             token_decimals=9,
             base_apy=26.18,
             boosted_apy=45.42,
