@@ -1,0 +1,21 @@
+{
+  "token": {
+    "symbol": "FDLT",
+    "name": "Fidolity Token",
+    "contractAddress": "soon",
+    "blockchain": "SOLANA",
+    "decimals": 9
+  },
+  "links": {
+    "website": "https://fidolity.com",
+    "twitter": "https://x.com/fidolity",
+    "github": "https://github.com/fidolity",
+    "discord": "https://discord.gg/fidolity",
+    "docs": "https://docs.fidolity.com"
+  },
+  "staking": {
+    "enabled": false,
+    "baseAPY": 26.18,
+    "boostedAPY": 45.42
+  }
+}
