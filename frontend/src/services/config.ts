@@ -74,7 +74,7 @@ class ConfigService {
       },
       links: {
         website: 'https://fidolity.com',
-        twitter: 'https://x.com/fidolity',
+        twitter: 'https://x.com/fidolitydotfun',
         github: 'https://github.com/fidolity',
         discord: 'https://discord.gg/fidolity',
         docs: 'https://docs.fidolity.com',

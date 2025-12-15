@@ -342,7 +342,7 @@ export default function HomePage() {
               [X]
             </p>
             <button
-              onClick={() => window.open('https://x.com/fidolity', '_blank')}
+              onClick={() => window.open('https://x.com/fidolitydotfun', '_blank')}
               className="w-16 h-16 rounded-full flex items-center justify-center hover:opacity-90 transition-all cursor-pointer"
               style={{ backgroundColor: '#FF4D00' }}
               aria-label="Follow us on X"
