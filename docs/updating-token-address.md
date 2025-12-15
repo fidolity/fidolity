@@ -4,7 +4,30 @@ Your Fidolity website uses a dynamic configuration system that allows you to upd
 
 ## Quick Update Guide
 
-### Method 1: Edit on GitHub (Recommended)
+### Method 1: After Build (Recommended for Hosting Platforms)
+
+**For Vercel/Netlify/etc with auto-deploy:**
+
+1. **Build your site locally or let hosting build it**
+   ```bash
+   cd frontend
+   yarn build
+   ```
+
+2. **Update the built config**
+   ```bash
+   # Option A: Use the update script
+   node update-config.js YOUR_CONTRACT_ADDRESS
+   
+   # Option B: Manually edit dist/config.json
+   nano dist/config.json
+   ```
+
+3. **Deploy ONLY the dist folder**
+   - Upload `dist/` contents to your hosting
+   - Or use the hosting platform's manual deploy feature
+
+### Method 2: Edit Source Before Building
 
 1. **Go to your repository**
    ```
