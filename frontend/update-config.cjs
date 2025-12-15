@@ -19,9 +19,8 @@ if (!fs.existsSync(path.join(__dirname, 'dist'))) {
 const contractAddress = process.argv[2] || process.env.CONTRACT_ADDRESS;
 
 if (!contractAddress) {
-  console.log('Usage: node update-config.js <CONTRACT_ADDRESS>');
-  console.log('Or set CONTRACT_ADDRESS environment variable');
-  process.exit(1);
+  console.log('ℹ️  No CONTRACT_ADDRESS provided, keeping default config');
+  process.exit(0);
 }
 
 // Read current config
