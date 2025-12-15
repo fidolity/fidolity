@@ -78,6 +78,7 @@ function App() {
           <Route path="/dashboard/platform" element={<PlatformPanelPage />} />
           <Route path="/dashboard/user" element={<UserPanelPage />} />
           <Route path="/demo/background" element={<BackgroundDemoPage />} />
+          <Route path="/admin" element={<AdminPage />} />
         </Routes>
       </main>
 
