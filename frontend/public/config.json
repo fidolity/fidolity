@@ -2,7 +2,7 @@
   "token": {
     "symbol": "FDLT",
     "name": "Fidolity Token",
-    "contractAddress": "soon",
+    "contractAddress": "test",
     "blockchain": "SOLANA",
     "decimals": 9
   },
