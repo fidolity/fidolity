@@ -136,8 +136,7 @@ fidolity/
 │   │   │   ├── StakingPage.tsx
 │   │   │   ├── MarketplacePage.tsx
 │   │   │   └── ...
-│   │   ├── services/        # API and blockchain services
-│   │   │   ├── api.ts
+│   │   ├── services/        # Blockchain services
 │   │   │   ├── solana.ts
 │   │   │   ├── staking.ts
 │   │   │   └── ...
@@ -147,11 +146,8 @@ fidolity/
 │   ├── vite.config.ts       # Vite configuration
 │   ├── tailwind.config.js   # Tailwind CSS config
 │   └── package.json
-├── backend/                 # Optional backend (for development)
-│   ├── server.py
-│   ├── models.py
-│   └── requirements.txt
 ├── docs/                    # Documentation
+├── scripts/                 # Utility scripts
 └── README.md
 ```
 
