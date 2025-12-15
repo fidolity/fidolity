@@ -1,0 +1,38 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Source code
+*.tsx text
+*.ts text
+*.jsx text
+*.js text
+*.json text
+*.css text
+*.scss text
+*.html text
+*.md text
+
+# Scripts
+*.sh text eol=lf
+
+# Images
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.svg text
+
+# Archives
+*.gz binary
+*.zip binary
+
+# Fonts
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.eot binary
+
+# Linguist overrides
+*.md linguist-detectable
+docs/** linguist-documentation
