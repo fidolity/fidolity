@@ -6,13 +6,13 @@
   "scripts": {
     "start": "serve dist -l 3000 -s",
     "dev": "vite",
-    "prebuild": "node scripts/generate-config.js",
+    "prebuild": "node scripts/generate-config.cjs",
     "build": "vite build",
-    "postbuild": "node update-config.js $CONTRACT_ADDRESS",
+    "postbuild": "node update-config.cjs $CONTRACT_ADDRESS",
     "preview": "vite preview",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit -p tsconfig.app.json",
-    "update-config": "node update-config.js"
+    "update-config": "node update-config.cjs"
   },
   "dependencies": {
     "@solana/web3.js": "^1.98.4",
