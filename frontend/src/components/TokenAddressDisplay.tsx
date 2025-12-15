@@ -20,21 +20,17 @@ export default function TokenAddressDisplay() {
 
   const loadTokenInfo = async () => {
     try {
-      const data = await DatabaseService.getTokenInfo('FDLT');
-      if (data && !Array.isArray(data)) {
-        setTokenInfo(data);
-      } else {
-        // If no data returned, use fallback
-        setTokenInfo({
-          token_symbol: 'FDLT',
-          token_name: 'Fidolity Token',
-          contract_address: 'soon',
-          blockchain: 'SOLANA',
-        });
-      }
+      // Load from config.json (can be updated without redeploying)
+      const tokenConfig = await configService.getTokenConfig();
+      setTokenInfo({
+        token_symbol: tokenConfig.symbol,
+        token_name: tokenConfig.name,
+        contract_address: tokenConfig.contractAddress,
+        blockchain: tokenConfig.blockchain,
+      });
     } catch (error) {
       console.error('Failed to load token info:', error);
-      // Fallback for static deployment
+      // Fallback
       setTokenInfo({
         token_symbol: 'FDLT',
         token_name: 'Fidolity Token',
