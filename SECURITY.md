@@ -19,7 +19,7 @@ We take the security of Fidolity seriously. If you discover a security vulnerabi
 
 Instead:
 
-1. **Email us** at security@fidolity.com
+1. **Email us** at security@fidolitydotfun.com
 2. **Include** in your report:
    - Type of vulnerability
    - Full paths of affected source files
@@ -54,7 +54,7 @@ When using Fidolity:
 
 ### 📞 Contact
 
-- **Security Email**: security@fidolity.com
+- **Security Email**: security@fidolitydotfun.com
 - **PGP Key**: Available upon request
 
 Thank you for helping keep Fidolity and our users safe!

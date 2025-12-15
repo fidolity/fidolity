@@ -197,7 +197,7 @@ VITE_TOKEN_DECIMALS=9
 
 # Links
 VITE_WEBSITE_URL=https://fidolity.com
-VITE_TWITTER_URL=https://x.com/fidolity
+VITE_TWITTER_URL=https://x.com/fidolitydotfun
 VITE_GITHUB_URL=https://github.com/fidolity
 VITE_DISCORD_URL=https://discord.gg/fidolity
 

@@ -109,4 +109,4 @@ You'll stop earning rewards but can restake anytime.
 
 Questions? Contact us:
 - Discord: [discord.gg/fidolity](https://discord.gg/fidolity)
-- Twitter: [@fidolity](https://twitter.com/fidolity)
+- Twitter: [@fidolitydotfun](https://x.com/fidolitydotfun)

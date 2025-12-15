@@ -273,7 +273,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 🔗 Links
 
 - **Website:** [fidolity.com](https://fidolity.com)
-- **Twitter:** [@fidolity](https://twitter.com/fidolity)
+- **Twitter:** [@fidolitydotfun](https://x.com/fidolitydotfun)
 - **GitHub:** [github.com/fidolity](https://github.com/fidolity)
 - **Discord:** [Join our community](https://discord.gg/fidolity)
 - **Documentation:** [docs.fidolity.com](https://docs.fidolity.com)

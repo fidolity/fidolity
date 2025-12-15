@@ -66,6 +66,6 @@ Before you begin, make sure you have:
 
 - [FAQs](./faq.md)
 - [Discord Community](https://discord.gg/fidolity)
-- [Twitter Support](https://twitter.com/fidolity)
+- [Twitter Support](https://x.com/fidolitydotfun)
 
 Happy building! 🚀

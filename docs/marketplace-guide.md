@@ -130,4 +130,4 @@ Issues with an agent?
 2. Report to support
 3. Request refund (if applicable)
 
-Email: support@fidolity.com
+Email: support@fidolitydotfun.com
