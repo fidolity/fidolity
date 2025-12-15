@@ -23,6 +23,14 @@ export default function TokenAddressDisplay() {
       const data = await DatabaseService.getTokenInfo('FDLT');
       if (data && !Array.isArray(data)) {
         setTokenInfo(data);
+      } else {
+        // If no data returned, use fallback
+        setTokenInfo({
+          token_symbol: 'FDLT',
+          token_name: 'Fidolity Token',
+          contract_address: 'soon',
+          blockchain: 'SOLANA',
+        });
       }
     } catch (error) {
       console.error('Failed to load token info:', error);
