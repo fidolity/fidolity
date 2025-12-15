@@ -20,6 +20,10 @@ dist/
 .env.test.local
 .env.production.local
 
+# Runtime Configuration (update directly on hosting)
+frontend/public/config.json
+frontend/dist/config.json
+
 # IDE
 .vscode/
 .idea/
