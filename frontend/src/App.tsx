@@ -12,6 +12,7 @@ import EnhancedAgentBuilderPage from './pages/EnhancedAgentBuilderPage';
 import BackgroundDemoPage from './pages/BackgroundDemoPage';
 import PlatformPanelPage from './pages/PlatformPanelPage';
 import UserPanelPage from './pages/UserPanelPage';
+import AdminPage from './pages/AdminPage';
 import WalletConnectionModal from './components/WalletConnectionModal';
 
 function App() {
