@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Copy, ExternalLink, Check } from 'lucide-react';
-import { DatabaseService } from '../services/database';
+import { configService } from '../services/config';
 
 interface TokenInfo {
   token_symbol: string;
