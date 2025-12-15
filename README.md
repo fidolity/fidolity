@@ -217,6 +217,15 @@ Deploy agents as X402 protocol services.
 **Blockchain:** Solana  
 **Contract Address:** Coming soon
 
+### 🔄 Updating Token Address
+
+You can update the token address **without redeploying**! Just edit:
+```
+frontend/public/config.json
+```
+
+See the [complete guide](docs/updating-token-address.md) for step-by-step instructions.
+
 ---
 
 ## 📚 Documentation
