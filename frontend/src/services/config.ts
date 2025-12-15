@@ -55,6 +55,16 @@ class ConfigService {
 
   async getTokenConfig(): Promise<TokenConfig> {
     const config = await this.getConfig();
+    
+    // Check for admin override in localStorage
+    const overrideAddress = localStorage.getItem('contract_address_override');
+    if (overrideAddress) {
+      return {
+        ...config.token,
+        contractAddress: overrideAddress,
+      };
+    }
+    
     return config.token;
   }
 
